@@ -1,104 +1,207 @@
 /* General Reset */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #444;
-    background-color: #f4f4f4;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #444;
+  background-color: #f4f4f4;
+}
   
-  h1 {
-    margin: 0;
-  }
+h1 {
+  margin: 0;
+}
   
-  p {
-    margin: 0.5rem 0;
-  }
+p {
+  margin: 0.5rem 0;
+}
   
-  /* Header Styling */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 2rem 5rem;
-  }
+/* Header Styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 2rem 5rem;
+}
   
-  .header-container {
-    display: flex;
-    align-items: center; /* Align image and text vertically */
-    justify-content: space-between; /* Push content to edges */
-    gap: 2rem; /* Add spacing between text and image */
-  }
+.header-container {
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  justify-content: space-between; /* Push content to edges */
+  gap: 2rem; /* Add spacing between text and image */
+}
   
-  .header-text {
-    flex: 2; /* Text takes more space */
-  }
+.header-text {
+  flex: 2; /* Text takes more space */
+}
   
-  .header-image {
-    flex: 1; /* Image takes less space */
-    text-align: center;
-  }
+.header-image {
+  flex: 1; /* Image takes less space */
+  text-align: center;
+}
   
-  .header-image img {
-    width: 150px; /* Set image size */
-    height: 150px;
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Prevent distortion */
-  }
+.header-image img {
+  width: 150px; /* Set image size */
+  height: 150px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Prevent distortion */
+}
   
-  /* Navigation */
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 1rem 0 0;
-    gap: 1.5rem;
-  }
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 1rem 0 0;
+  gap: 1.5rem;
+}
   
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
+/* Remove underline for all links */
+a {
+  text-decoration: none; /* Removes underline */
+  color: #007bff; /* Blue color for links */
+}
   
-  nav a:hover {
-    text-decoration: underline;
-  }
+/* Add underline only on hover */
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Slightly darker blue for hover */
+}
   
-  /* Section Styling */
-  section {
-    margin: 2rem auto;
-    padding: 2rem;
-    max-width: 900px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+/* Ensure visited links look the same as regular links */
+a:visited {
+  text-decoration: none;
+  color: #007bff;
+}
+
+header nav a {
+  text-decoration: none; /* Remove underline */
+  color: white !important; /* Force the color to white */
+  font-weight: bold; /* Bold for emphasis */
+}
   
-  h2 {
-    color: #333;
-  }
+/* Hover effect for navigation links */
+header nav a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
   
-  .project {
-    margin-bottom: 1.5rem;
-  }
   
-  .project h3 a {
-    color: #007bff;
-    text-decoration: none;
-  }
+/* Section Styling */
+section {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
   
-  .project h3 a:hover {
-    text-decoration: underline;
-  }
+h2 {
+  color: #333;
+}
+  
+.project {
+  margin-bottom: 1.5rem;
+}
+  
+.project h3 a {
+  color: #007bff;
+  text-decoration: none;
+}
+  
+.project h3 a:hover {
+  text-decoration: underline;
+}
   
   /* Footer Styling */
-  footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 1rem 0;
-    margin-top: 2rem;
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+  
+#about h2, #projects h2, #contact h2 {
+  font-size: 1.8em; /* Match font size across sections */
+  font-weight: bold; /* Keep the bold style */
+  text-align: left; /* Align the header to the left */
+  margin-bottom: 10px; /* Add spacing below the header */
+  margin-left: 10px; /* Reduce left margin for a closer alignment */
+  margin-top: 5px; /* Reduce top margin for less space above */
+  color: #333; /* Ensure the text color is consistent */
+}
+
+  /* Section styling */
+#contact {
+  padding: 20px 40px; /* Add padding for symmetry */
+  background-color: #f9f9f9; /* Light background to match other sections */
+  border-radius: 10px; /* Rounded corners for consistency */
+  margin: 20px auto; /* Space between sections */
+  max-width: 900px; /* Ensure the width matches other sections */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+  
+  /* Flexbox container for the text and image */
+.about-container {
+  display: flex;
+  align-items: center; /* Vertically align the text and photo */
+  justify-content: center; /* Center the text and image container */
+  gap: 20px; /* Reduce space between the text and photo */
+  padding: 20px 60px; /* Add padding on the sides */
+  flex-wrap: wrap; /* Stack elements on small screens */
+}
+  
+  /* Text styling */
+.about-text {
+  flex: 1; /* Allow the text to scale proportionally */
+  max-width: 50%; /* Limit the width of the text */
+  text-align: left; /* Align text to the left */
+  font-size: 1.2em; /* Slightly larger font size */
+  line-height: 1.8; /* Improve readability */
+  padding-right: 20px; /* Add padding on the right */
+}
+  
+  /* Image styling */
+.about-photo img {
+  width: 300px; /* Increase the image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  object-fit: cover; /* Ensure proper scaling */
+  padding: 10px; /* Add padding around the image */
+  background-color: #fff; /* Optional: White background for image padding */
+} 
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #about h2, #projects h2, #contact h2 {
+      font-size: 1.5em; /* Slightly smaller font size */
+      margin-left: 5px; /* Reduce left margin for narrower screens */
+      text-align: center; /* Center-align headers for smaller screens */
+    }
+  
+    #contact {
+      padding: 10px 20px; /* Reduce padding for smaller screens */
+      margin: 10px; /* Reduce margins for tighter layouts */
+      max-width: 100%; /* Allow section to span the full width */
+    }
+  
+    /* Adjust overall layout */
+    .about-container {
+      flex-direction: column; /* Stack the text and image vertically */
+      text-align: center; /* Center-align content for better presentation */
+    }
+  
+    .about-photo img {
+      width: 100%; /* Make the image responsive */
+      max-width: 300px; /* Limit the max width for better scaling */
+      margin: 10px auto; /* Add spacing and center image */
+    }
+  
+    .about-text {
+      max-width: 100%; /* Allow text to span the full width */
+      padding-right: 0; /* Remove right padding */
+    }
   }
   
