@@ -175,33 +175,45 @@ footer {
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-    #about h2, #projects h2, #contact h2 {
-      font-size: 1.5em; /* Slightly smaller font size */
-      margin-left: 5px; /* Reduce left margin for narrower screens */
-      text-align: center; /* Center-align headers for smaller screens */
-    }
-  
-    #contact {
-      padding: 10px 20px; /* Reduce padding for smaller screens */
-      margin: 10px; /* Reduce margins for tighter layouts */
-      max-width: 100%; /* Allow section to span the full width */
-    }
-  
-    /* Adjust overall layout */
-    .about-container {
-      flex-direction: column; /* Stack the text and image vertically */
-      text-align: center; /* Center-align content for better presentation */
-    }
-  
-    .about-photo img {
-      width: 100%; /* Make the image responsive */
-      max-width: 300px; /* Limit the max width for better scaling */
-      margin: 10px auto; /* Add spacing and center image */
-    }
-  
-    .about-text {
-      max-width: 100%; /* Allow text to span the full width */
-      padding-right: 0; /* Remove right padding */
-    }
+  #about h2, #projects h2, #contact h2 {
+    font-size: 1.5em; /* Slightly smaller font size */
+    margin-left: 5px; /* Reduce left margin for narrower screens */
+    text-align: center; /* Center-align headers for smaller screens */
   }
+  
+  #contact {
+    padding: 10px 20px; /* Reduce padding for smaller screens */
+    margin: 10px; /* Reduce margins for tighter layouts */
+    max-width: 100%; /* Allow section to span the full width */
+  }
+  
+  /* Adjust overall layout */
+  .about-container {
+    flex-direction: column; /* Stack the text and image vertically */
+    text-align: center; /* Center-align content for better presentation */
+  }
+  
+  .about-photo img {
+    width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Limit the max width for better scaling */
+    margin: 10px auto; /* Add spacing and center image */
+  }
+  
+  .about-text {
+    max-width: 100%; /* Allow text to span the full width */
+    padding-right: 0; /* Remove right padding */
+  }
+
+  .header-logo h1 {
+    font-size: 1.8rem; /* Reduce font size */
+    line-height: 1.1; /* Adjust spacing */
+    text-align: center; /* Center-align text */
+  }
+
+  .header-container {
+    flex-direction: column; /* Stack logo and navigation */
+    align-items: center; /* Center-align contents */
+    gap: 1rem; /* Add spacing between logo and nav */
+  }
+}
   
