@@ -1,45 +1,58 @@
-/* General Styles */
-:root {
-    --primary-color: #333;
-    --secondary-color: #f4f4f4;
-    --accent-color: #007bff;
-    --text-color: #444;
-    --font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    font-family: var(--font-family);
-    line-height: 1.6;
+/* General Reset */
+body {
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #444;
+    background-color: #f4f4f4;
   }
   
-  /* Header */
+  h1 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Header Styling */
   header {
-    background: var(--primary-color);
+    background-color: #333;
     color: white;
-    padding: 2rem 1rem;
+    padding: 2rem 5rem;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    justify-content: space-between; /* Push content to edges */
+    gap: 2rem; /* Add spacing between text and image */
+  }
+  
+  .header-text {
+    flex: 2; /* Text takes more space */
+  }
+  
+  .header-image {
+    flex: 1; /* Image takes less space */
     text-align: center;
   }
   
-  .header-container h1 {
-    margin: 0;
-    font-size: 2.5rem;
+  .header-image img {
+    width: 150px; /* Set image size */
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Prevent distortion */
   }
   
-  .header-container p {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-  }
-  
+  /* Navigation */
   nav ul {
     list-style: none;
-    padding: 0;
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 1rem 0 0;
     gap: 1.5rem;
   }
   
@@ -47,30 +60,32 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
   }
   
   nav a:hover {
-    color: var(--accent-color);
+    text-decoration: underline;
   }
   
-  /* Section Styles */
+  /* Section Styling */
   section {
     margin: 2rem auto;
     padding: 2rem;
-    max-width: 800px;
+    max-width: 900px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  section h2 {
-    margin-top: 0;
-    color: var(--primary-color);
+  h2 {
+    color: #333;
+  }
+  
+  .project {
+    margin-bottom: 1.5rem;
   }
   
   .project h3 a {
-    color: var(--accent-color);
+    color: #007bff;
     text-decoration: none;
   }
   
@@ -78,34 +93,12 @@
     text-decoration: underline;
   }
   
-  .project {
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Contact Section */
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  ul a {
-    color: var(--accent-color);
-    text-decoration: none;
-  }
-  
-  ul a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer */
+  /* Footer Styling */
   footer {
     text-align: center;
-    background: var(--primary-color);
+    background: #333;
     color: white;
     padding: 1rem 0;
     margin-top: 2rem;
-  }  
+  }
+  
